@@ -1,0 +1,31 @@
+<ImageView
+    android:id="@+id/main_img"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginStart="100dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginEnd="100dp"
+    android:background="@drawable/img" />
+<EditText
+android:textColorHint="@color/white"
+android:id="@+id/main_email"
+android:inputType="textEmailAddress"
+android:hint="Enter Email Id"
+android:textColor="@color/white"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/main_img"
+android:layout_margin="25dp"
+    />
+<!--suppress AndroidUnresolvableTag -->
+<EditText
+android:id="@+id/main_password"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/main_email"
+android:layout_margin="25dp"
+android:hint="Enter Password"
+android:inputType="numberPassword"
+android:textColor="@color/white"
+android:textColorHint="@color/white"
+    />

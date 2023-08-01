@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom=""
+            android:src="@drawable/login_image" />
+
+        <EditText
+            android:id="@+id/main_email"
+            android:textColorHint="@color/white_trans"
+            style="@style/edit_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:layout_marginTop="1dp"
+            android:drawableLeft="@drawable/email_online"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/main_password"
+            style="@style/edit_16"
+            android:textColorHighlight="@color/white_trans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_email"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:drawableLeft="@drawable/password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white_trans"
+             />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
